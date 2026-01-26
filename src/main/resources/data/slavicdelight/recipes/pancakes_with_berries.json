@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+      {
+        "item": "slavic_delight:pancakes"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+  ],
+  "result": {
+    "item": "slavic_delight:pancakes_with_berries"
+  }
+}

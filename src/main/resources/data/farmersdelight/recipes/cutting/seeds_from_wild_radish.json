@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "slavic_delight:wild_radish"
+    }
+  ],
+  "result": [
+    {
+      "count": 2,
+      "item": "slavic_delight:radish_seeds"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

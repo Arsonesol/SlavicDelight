@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "slavic_delight:minced_chicken"
+  },
+  "result": "slavic_delight:chicken_patty"
+}

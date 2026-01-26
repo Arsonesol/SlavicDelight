@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "slavic_delight:sausage",
+    "slavic_delight:minced_pork",
+    "slavic_delight:pork_patty",
+    "slavic_delight:minced_chicken",
+    "slavic_delight:chicken_patty",
+    "slavic_delight:minced_cod",
+    "slavic_delight:crab_sticks"
+  ]
+}

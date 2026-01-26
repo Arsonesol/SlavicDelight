@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "tag": "forge:radish"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "item": "slavic_delight:boiled_egg"
+    },
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "slavic_delight:kefir_bottle"
+    },
+    {
+      "item": "slavic_delight:sausage"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "slavic_delight:okroshka_kefir"
+  }
+}

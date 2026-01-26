@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "slavic_delight:minced_pork"
+  },
+  "result": "slavic_delight:pork_patty"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "l": {
+      "item": "minecraft:stripped_oak_log"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "l",
+    "s"
+  ],
+  "result": {
+    "item": "slavic_delight:pusher"
+  },
+  "show_notification": true
+}

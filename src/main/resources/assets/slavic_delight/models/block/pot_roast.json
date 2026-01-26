@@ -1,0 +1,7 @@
+{
+  "parent": "slavic_delight:block/cooking_pot",
+  "textures": {
+    "0": "slavic_delight:block/pot_roast",
+    "particle": "slavic_delight:block/pot_roast"
+  }
+}

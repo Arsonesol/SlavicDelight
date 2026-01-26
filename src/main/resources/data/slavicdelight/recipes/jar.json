@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "s": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "gsg",
+    "g g",
+    "ggg"
+  ],
+  "result": {
+    "item": "slavic_delight:jar"
+  },
+  "show_notification": true
+}

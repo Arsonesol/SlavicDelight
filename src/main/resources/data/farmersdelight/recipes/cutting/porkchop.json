@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:porkchop"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "slavic_delight:minced_pork"
+    },
+    {
+      "count": 1,
+      "item": "farmersdelight:bacon"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

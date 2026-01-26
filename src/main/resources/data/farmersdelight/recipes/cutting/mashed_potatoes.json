@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    }
+  ],
+  "result": [
+    {
+      "item": "slavic_delight:mashed_potatoes"
+    }
+  ],
+  "tool": {
+    "item": "slavic_delight:pusher"
+  }
+}

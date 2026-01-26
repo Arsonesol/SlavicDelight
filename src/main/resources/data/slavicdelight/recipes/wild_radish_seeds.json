@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      {
+        "item": "slavic_delight:wild_radish"
+      }
+    ]
+  ],
+  "result": {
+    "item": "slavic_delight:radish_seeds"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmersdelight:chicken_cuts"
+    }
+  ],
+  "result": [
+    {
+      "item": "slavic_delight:minced_chicken"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

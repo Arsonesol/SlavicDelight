@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 0.50,
+  "ingredients": [
+    {
+      "item": "slavic_delight:minced_pork"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "slavic_delight:sausage"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "slavic_delight:jar_recipe",
+
+  "ingredients": [
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    },
+    {
+      "tag": "forge:cucumber"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "slavic_delight:pickles_jar"
+  }
+}

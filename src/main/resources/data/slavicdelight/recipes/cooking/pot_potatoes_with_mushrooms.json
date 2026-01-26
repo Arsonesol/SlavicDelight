@@ -1,0 +1,22 @@
+{
+  "type": "slavic_delight:cooking_recipe",
+  "cookingtime": 250,
+  "ingredients": [
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "item": "slavic_delight:pot_potatoes_with_mushrooms"
+  }
+}

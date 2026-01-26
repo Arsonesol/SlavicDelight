@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredients": [
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "tag": "forge:solyanka_ingredients"
+    },
+    {
+      "tag": "forge:solyanka_ingredients"
+    },
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "slavic_delight:solyanka"
+  }
+}

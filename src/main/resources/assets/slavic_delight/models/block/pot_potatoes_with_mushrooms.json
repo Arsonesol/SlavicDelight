@@ -1,0 +1,8 @@
+{
+  "parent": "slavic_delight:block/cooking_pot",
+  "textures": {
+    "0": "slavic_delight:block/pot_potatoes_with_mushrooms",
+    "particle": "slavic_delight:block/pot_potatoes_with_mushrooms"
+  }
+}
+
