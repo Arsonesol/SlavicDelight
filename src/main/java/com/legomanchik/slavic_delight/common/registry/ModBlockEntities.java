@@ -23,14 +23,13 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("brew_barrel_entity",
                     ()-> BlockEntityType.Builder.of(BrewBarrelEntity::new, ModBlocks.BREW_BARREL.get()).build(null));
 
-    public static final Supplier<BlockEntityType<CookingPotEntity>> COOKING_POT_ENTITY =
-            BLOCK_ENTITIES.register("cooking_pot_entity",
-                    ()-> BlockEntityType.Builder.of((pPos, pBlockState) -> new CookingPotEntity(pPos, pBlockState), ModBlocks.COOKING_POT.get()).build(null));
+    public static final Supplier<BlockEntityType<ClayPotBlockEntity>> CLAY_POT = BLOCK_ENTITIES.register("clay_pot",
+            () -> BlockEntityType.Builder.of(ClayPotBlockEntity::new, ModBlocks.CLAY_POT.get()).build(null));
 
-    public static final Supplier<BlockEntityType<PotWithEatEntity>> POT_WITH_EAT_ENTITY =
+    public static final Supplier<BlockEntityType<PotWithEatBlockEntity>> POT_WITH_EAT_ENTITY =
             BLOCK_ENTITIES.register("pot_with_eat_entity",
                     () -> BlockEntityType.Builder.of(
-                            PotWithEatEntity::new,
+                            PotWithEatBlockEntity::new,
                             ModBlocks.POT_POTATOES_WITH_MUSHROOMS.get(),
                             ModBlocks.POT_ROAST.get(),
                             ModBlocks.POT_ROAST_WITH_CARROT.get()
@@ -47,8 +46,4 @@ public class ModBlockEntities {
     public static final Supplier<BlockEntityType<BrineJarEntity>> BRINE_JAR_ENTITY =
             BLOCK_ENTITIES.register("brine_entity",
                     ()-> BlockEntityType.Builder.of(BrineJarEntity::new, ModBlocks.BRINE_JAR.get()).build(null));
-
-    public static final Supplier<BlockEntityType<SauerkrautJarEntity>> SAUERKRAUT_JAR_ENTITY =
-            BLOCK_ENTITIES.register("sauerkraut_entity",
-                    ()-> BlockEntityType.Builder.of(SauerkrautJarEntity::new, ModBlocks.SAUERKRAUT_JAR.get()).build(null));
 }

@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:item/pusher_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "minecraft:item/handheld",
+      "textures": {
+        "layer0": "slavic_delight:item/pusher"
+      }
+    },
+    "ground": {
+      "parent": "slavic_delight:item/pusher_3d"
+    },
+    "fixed": {
+      "parent": "minecraft:item/handheld",
+      "textures": {
+        "layer0": "slavic_delight:item/pusher"
+      }
+    }
+  }
+}

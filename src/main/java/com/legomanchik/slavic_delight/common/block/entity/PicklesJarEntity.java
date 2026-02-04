@@ -9,14 +9,11 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
-public class PicklesJarEntity extends BlockEntity implements TickableBlockEntity {
+public class PicklesJarEntity extends BlockEntity {
 
     public PicklesJarEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.PICKLES_JAR_ENTITY.get(), pos, state);
     }
-
-    @Override
-    public void tick() {}
 
     @Nullable
     @Override

@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:block/clay_pot"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "slavic_delight:item/clay_pot"
+      }
+    },
+    "ground": {
+      "parent": "slavic_delight:block/clay_pot"
+    },
+    "fixed": {
+      "parent": "slavic_delight:block/clay_pot"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:block/brew_barrel"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "slavic_delight:block/brew_barrel"
+    },
+    "ground": {
+      "parent": "slavic_delight:block/brew_barrel"
+    },
+    "fixed": {
+      "parent": "slavic_delight:block/brew_barrel"
+    }
+  }
+}

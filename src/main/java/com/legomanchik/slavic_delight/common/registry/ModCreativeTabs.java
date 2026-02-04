@@ -25,7 +25,7 @@ public class ModCreativeTabs {
 
     public static final Supplier<CreativeModeTab> TAB_SLAVICDELIGHT = CREATIVE_TABS.register(SlavicDelight.MOD_ID,
             () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.slavicdelight"))
+                    .title(Component.translatable("itemGroup.slavic_delight"))
                     .icon(() -> new ItemStack(ModItems.CUCUMBER.get()))
                     .displayItems((displayParams, output) ->
                             TAB_ITEMS.forEach(itemLike -> output.accept(itemLike.get()))).build());

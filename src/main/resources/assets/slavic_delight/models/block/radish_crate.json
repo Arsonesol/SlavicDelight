@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/orientable_with_bottom",
-  "textures": {
-    "bottom": "slavic_delight:block/radish_crate_top",
-    "front": "slavic_delight:block/radish_crate_side",
-    "side": "slavic_delight:block/radish_crate_side",
-    "top": "slavic_delight:block/radish_crate_top"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": {"model": "slavic_delight:block/brew_barrel"},
-    "facing=east": {"model": "slavic_delight:block/brew_barrel", "y": 90},
-    "facing=south": {"model": "slavic_delight:block/brew_barrel", "y": 180},
-    "facing=west": {"model": "slavic_delight:block/brew_barrel", "y": 270}
-  }
-}

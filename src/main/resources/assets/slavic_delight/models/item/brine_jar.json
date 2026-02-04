@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:block/jar",
+    "textures": {
+      "0": "slavic_delight:block/brine_jar",
+      "particle": "slavic_delight:block/jar"
+    },
+    "render_type": "minecraft:translucent"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "slavic_delight:item/brine_jar"
+      },
+      "render_type": "minecraft:translucent"
+    },
+    "ground": {
+      "parent": "slavic_delight:block/jar",
+      "textures": {
+        "0": "slavic_delight:block/brine_jar",
+        "particle": "slavic_delight:block/jar"
+      },
+      "render_type": "minecraft:translucent"
+    },
+    "fixed": {
+      "parent": "slavic_delight:block/jar",
+      "textures": {
+        "0": "slavic_delight:block/jar",
+        "particle": "slavic_delight:block/jar"
+      },
+      "render_type": "minecraft:translucent"
+    }
+  }
+}

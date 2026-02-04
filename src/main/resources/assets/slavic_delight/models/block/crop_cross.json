@@ -3,7 +3,6 @@
   "textures": {
     "particle": "#cross"
   },
-  "loader": "neoforge:separate_transforms",
   "elements": [
     {
       "from": [0.8, -1, 8],

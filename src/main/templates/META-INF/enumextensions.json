@@ -1,0 +1,70 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/inventory/RecipeBookType",
+      "name": "SLAVIC_DELIGHT_CLAY_POT_COOKING",
+      "constructor": "()V",
+      "parameters": []
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_CLAY_POT_COOKING_SEARCH",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_CLAY_POT_COOKING_SEARCH"
+      }
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_CLAY_POT_COOKING_SOUPS",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_CLAY_POT_COOKING_SOUPS"
+      }
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_CLAY_POT_COOKING_MISC",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_CLAY_POT_COOKING_MISC"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/inventory/RecipeBookType",
+      "name": "SLAVIC_DELIGHT_BREWING",
+      "constructor": "()V",
+      "parameters": []
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_BREWING_SEARCH",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_BREWING_SEARCH"
+      }
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_BREWING_DRINKS",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_BREWING_DRINKS"
+      }
+    },
+    {
+      "enum": "net/minecraft/client/RecipeBookCategories",
+      "name": "SLAVIC_DELIGHT_BREWING_MISC",
+      "constructor": "(Ljava/util/function/Supplier;)V",
+      "parameters": {
+        "class": "com/legomanchik/slavic_delight/common/EnumParameters",
+        "field": "PROXY_BREWING_MISC"
+      }
+    }
+  ]
+}

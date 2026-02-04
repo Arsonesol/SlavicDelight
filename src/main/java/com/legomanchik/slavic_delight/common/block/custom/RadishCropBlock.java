@@ -1,7 +1,5 @@
 package com.legomanchik.slavic_delight.common.block.custom;
 
-import com.legomanchik.slavic_delight.common.registry.ModItems;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,11 +14,6 @@ public class RadishCropBlock extends CropBlock {
 
     public RadishCropBlock(Properties pProperties) {
         super(pProperties);
-    }
-
-    @Override
-    protected @NotNull ItemLike getBaseSeedId() {
-        return ModItems.RADISH_SEEDS.get();
     }
 
     @Override

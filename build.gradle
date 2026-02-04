@@ -10,8 +10,18 @@ group = mod_group_id
 
 repositories {
     maven {
+        // Farmer's Delight
         name = "CurseMaven"
         url = "https://www.cursemaven.com"
+    }
+    maven {
+        // JEI
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
     }
     mavenLocal()
 }
@@ -21,6 +31,7 @@ base {
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
 
 neoForge {
     version = project.neo_version
@@ -72,6 +83,11 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 
 dependencies {
+    compileOnly "mezz.jei:jei-${jei_minecraft}-common-api:${jei_version}"
+    compileOnly "mezz.jei:jei-${jei_minecraft}-neoforge-api:${jei_version}"
+
+    runtimeOnly("mezz.jei:jei-${jei_minecraft}-neoforge:${jei_version}")
+
     implementation("curse.maven:farmers_delight-398521:${farmers_delight}")
 }
 

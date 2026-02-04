@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:block/pot_potatoes_with_mushrooms",
+    "textures": {
+      "particle": "slavic_delight:item/pot_potatoes_with_mushrooms"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "slavic_delight:item/pot_potatoes_with_mushrooms",
+        "particle": "slavic_delight:item/pot_potatoes_with_mushrooms"
+      }
+    },
+    "ground": {
+      "parent": "slavic_delight:block/pot_potatoes_with_mushrooms",
+      "textures": {
+        "particle": "slavic_delight:item/pot_potatoes_with_mushrooms"
+      }
+    },
+    "fixed": {
+      "parent": "slavic_delight:block/pot_potatoes_with_mushrooms",
+      "textures": {
+        "particle": "slavic_delight:item/pot_potatoes_with_mushrooms"
+      }
+    }
+  }
+}

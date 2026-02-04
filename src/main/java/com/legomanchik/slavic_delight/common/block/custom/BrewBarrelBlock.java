@@ -1,9 +1,12 @@
 package com.legomanchik.slavic_delight.common.block.custom;
 
 import com.legomanchik.slavic_delight.common.block.entity.BrewBarrelEntity;
-import com.legomanchik.slavic_delight.common.block.entity.TickableBlockEntity;
+import com.legomanchik.slavic_delight.common.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -26,19 +29,25 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.Map;
 
 public class BrewBarrelBlock extends Block implements EntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private static final VoxelShape SHAPE_NORTH = Block.box(2, 0, 0, 14, 15, 16);
-    private static final VoxelShape SHAPE_SOUTH = Block.box(2, 0, 0, 14, 15, 16);
-    private static final VoxelShape SHAPE_EAST = Block.box(0, 0, 2, 16, 15, 14);
-    private static final VoxelShape SHAPE_WEST =  Block.box(0, 0, 2, 16, 15, 14);
+    private static final Map<Direction, VoxelShape> SHAPES = Map.of(
+            Direction.NORTH, Block.box(2, 0, 0, 14, 15, 16),
+            Direction.SOUTH, Block.box(2, 0, 0, 14, 15, 16),
+            Direction.EAST,  Block.box(0, 0, 2, 16, 15, 14),
+            Direction.WEST,  Block.box(0, 0, 2, 16, 15, 14)
+    );
 
     public BrewBarrelBlock(Properties properties) {
         super(properties);
@@ -46,30 +55,32 @@ public class BrewBarrelBlock extends Block implements EntityBlock {
     }
 
     @Override
-    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos blockPos, Player player, InteractionHand hand, BlockHitResult hitResult) {
-        return ItemInteractionResult.FAIL;
+    public ItemInteractionResult useItemOn(ItemStack heldStack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
+        if (heldStack.isEmpty() && player.isShiftKeyDown()) {
+            level.playSound(null, pos, SoundEvents.LANTERN_PLACE, SoundSource.BLOCKS, 0.7F, 1.0F);
+        } else if (!level.isClientSide) {
+            BlockEntity tileEntity = level.getBlockEntity(pos);
+            if (tileEntity instanceof BrewBarrelEntity brewBarrelEntity) {
+                player.openMenu(brewBarrelEntity, pos);
+            }
+            return ItemInteractionResult.SUCCESS;
+        }
+        return ItemInteractionResult.SUCCESS;
     }
 
     @Override
-    public @NotNull RenderShape getRenderShape(@NotNull BlockState pState) {
+    public RenderShape getRenderShape(BlockState pState) {
         return RenderShape.MODEL;
     }
 
     @Override
-    public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
-        Direction direction = pState.getValue(BlockStateProperties.HORIZONTAL_FACING);
-        return switch (direction) {
-            case NORTH -> SHAPE_NORTH;
-            case SOUTH -> SHAPE_SOUTH;
-            case EAST -> SHAPE_EAST;
-            case WEST -> SHAPE_WEST;
-            default -> Shapes.block();
-        };
+    public VoxelShape getShape(BlockState pState, BlockGetter pLevel, BlockPos pPos, CollisionContext pContext) {
+        Direction direction = pState.getValue(FACING);
+        return SHAPES.getOrDefault(direction, Shapes.block());
     }
 
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        BlockPos pos = context.getClickedPos();
         Level level = context.getLevel();
         FluidState fluid = level.getFluidState(context.getClickedPos());
 
@@ -85,8 +96,16 @@ public class BrewBarrelBlock extends Block implements EntityBlock {
     }
 
     @Override
-    public void onRemove(BlockState pState, @NotNull Level pLevel, @NotNull BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
-        super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
+    public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
+        if (state.getBlock() != newState.getBlock()) {
+            BlockEntity tileEntity = level.getBlockEntity(pos);
+            if (tileEntity instanceof BrewBarrelEntity brewBarrelEntity) {
+                Containers.dropContents(level, pos, brewBarrelEntity.getDroppableInventory());
+                brewBarrelEntity.getUsedRecipesAndPopExperience(level, Vec3.atCenterOf(pos));
+                level.updateNeighbourForOutputSignal(pos, this);
+            }
+            super.onRemove(state, level, pos, newState, isMoving);
+        }
     }
 
     @Override
@@ -105,9 +124,14 @@ public class BrewBarrelBlock extends Block implements EntityBlock {
         return new BrewBarrelEntity(pos, state);
     }
 
-    @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(@NotNull Level level, @NotNull BlockState state, @NotNull BlockEntityType<T> type) {
-        return TickableBlockEntity.getTickerHelper(level);
+    @Nullable
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntity) {
+        return createTickerHelper(blockEntity, ModBlockEntities.BREW_BARREL_ENTITY.get(), BrewBarrelEntity::brewingTick);
+    }
+
+    @Nullable
+    protected static <E extends BlockEntity, A extends BlockEntity> BlockEntityTicker<A> createTickerHelper(BlockEntityType<A> serverType, BlockEntityType<E> clientType, BlockEntityTicker<? super E> ticker) {
+        return clientType == serverType ? (BlockEntityTicker<A>)ticker : null;
     }
 }
 

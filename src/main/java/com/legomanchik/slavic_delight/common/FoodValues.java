@@ -44,5 +44,5 @@ public class FoodValues {
     public static final FoodProperties PELMENI = (new FoodProperties.Builder()).nutrition(9).saturationModifier(0.9f).build();
     public static final FoodProperties BOILED_POTATOES = (new FoodProperties.Builder()).nutrition(3).saturationModifier(0.5f).build();
     public static final FoodProperties BOILED_EGG = (new FoodProperties.Builder()).nutrition(3).saturationModifier(0.2f).build();
-    public static final FoodProperties SAUERKRAUT_JAR = (new FoodProperties.Builder()).nutrition(4).saturationModifier(0.2f).build();
+    public static final FoodProperties SAUERKRAUT = (new FoodProperties.Builder()).nutrition(4).saturationModifier(0.2f).build();
 }

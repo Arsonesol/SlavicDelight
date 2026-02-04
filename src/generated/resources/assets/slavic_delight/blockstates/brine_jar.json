@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "slavic_delight:block/brine_jar",
+      "render_type": "minecraft:cutout"
+    }
+  }
+}

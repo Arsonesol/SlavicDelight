@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "slavic_delight:block/pot_roast",
+    "textures": {
+      "particle": "slavic_delight:item/pot_roast"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "item/generated",
+      "textures": {
+        "layer0": "slavic_delight:item/pot_roast",
+        "particle": "slavic_delight:item/pot_roast"
+      }
+    },
+    "ground": {
+      "parent": "slavic_delight:block/pot_roast",
+      "textures": {
+        "particle": "slavic_delight:item/pot_roast"
+      }
+    },
+    "fixed": {
+      "parent": "slavic_delight:block/pot_roast",
+      "textures": {
+        "particle": "slavic_delight:item/pot_roast"
+      }
+    }
+  }
+}

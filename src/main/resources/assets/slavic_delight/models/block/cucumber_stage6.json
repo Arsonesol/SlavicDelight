@@ -1,7 +1,0 @@
-{
-  "parent": "slavic_delight:block/crop_cross",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "cross": "slavic_delight:block/6"
-  }
-}

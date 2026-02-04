@@ -4,7 +4,7 @@
     "0": "slavic_delight:block/jar",
     "particle": "minecraft:block/glass"
   },
-  "loader": "neoforge:separate_transforms",
+  "render_type": "minecraft:cutout",
   "elements": [
     {
       "from": [4, 0, 4],
