@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kefir_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "slavic_delight:kefir_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slavic_delight:okroshka_kefir"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kefir_bottle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slavic_delight:okroshka_kefir"
+    ]
+  }
+}

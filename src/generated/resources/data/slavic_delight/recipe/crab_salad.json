@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "item": "slavic_delight:crab_sticks"
+    },
+    {
+      "item": "slavic_delight:boiled_egg"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:crab_salad"
+  }
+}

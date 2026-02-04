@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "slavic_delight:cucumber"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:cucumber_seeds"
+  }
+}

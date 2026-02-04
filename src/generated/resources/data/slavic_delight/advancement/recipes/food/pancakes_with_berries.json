@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pancakes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "slavic_delight:pancakes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slavic_delight:pancakes_with_berries"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pancakes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slavic_delight:pancakes_with_berries"
+    ]
+  }
+}

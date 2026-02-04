@@ -1,0 +1,22 @@
+{
+  "values": {
+    "slavic_delight:boiled_egg": {
+      "chance": 0.3
+    },
+    "slavic_delight:cucumber": {
+      "chance": 0.65
+    },
+    "slavic_delight:pickles": {
+      "chance": 0.85
+    },
+    "slavic_delight:radish": {
+      "chance": 0.65
+    },
+    "slavic_delight:wild_cucumbers": {
+      "chance": 0.5
+    },
+    "slavic_delight:wild_radish": {
+      "chance": 0.5
+    }
+  }
+}

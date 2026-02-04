@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:bucket"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "p": {
+      "item": "minecraft:oak_planks"
+    },
+    "s": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "sss",
+    "ibi",
+    "psp"
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:brew_barrel"
+  }
+}

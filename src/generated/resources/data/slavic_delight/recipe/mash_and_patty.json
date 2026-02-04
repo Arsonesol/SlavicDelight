@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "slavic_delight:pork_patty"
+    },
+    {
+      "item": "slavic_delight:mashed_potatoes"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:mash_and_patty"
+  }
+}

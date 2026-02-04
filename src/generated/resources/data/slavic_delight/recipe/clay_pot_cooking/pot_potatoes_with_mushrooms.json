@@ -1,0 +1,21 @@
+{
+  "type": "slavic_delight:clay_pot_cooking",
+  "ingredients": [
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:pot_potatoes_with_mushrooms"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:wheat_dough"
+    },
+    {
+      "item": "slavic_delight:mashed_potatoes"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:pirozhok_with_potatoes"
+  }
+}

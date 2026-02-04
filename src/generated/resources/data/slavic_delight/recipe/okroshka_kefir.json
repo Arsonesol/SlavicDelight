@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "slavic_delight:radish"
+    },
+    {
+      "item": "slavic_delight:cucumber"
+    },
+    {
+      "item": "slavic_delight:boiled_egg"
+    },
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "slavic_delight:kefir_bottle"
+    },
+    {
+      "item": "slavic_delight:sausage"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:okroshka_kefir"
+  }
+}

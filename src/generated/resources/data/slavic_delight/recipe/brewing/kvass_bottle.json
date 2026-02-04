@@ -1,0 +1,27 @@
+{
+  "type": "slavic_delight:brewing",
+  "bottle": {
+    "count": 1,
+    "id": "minecraft:glass_bottle"
+  },
+  "brewingTime": 400,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:kvass_bottle"
+  }
+}

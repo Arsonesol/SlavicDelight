@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:glass"
+    },
+    "s": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "gsg",
+    "g g",
+    "ggg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:jar"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:boiled_potatoes"
+  }
+}

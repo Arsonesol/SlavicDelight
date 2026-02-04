@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "slavic_delight:radish_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "slavic_delight:radish"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_radish_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "slavic_delight:radish_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slavic_delight:radish"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_radish_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slavic_delight:radish"
+    ]
+  }
+}

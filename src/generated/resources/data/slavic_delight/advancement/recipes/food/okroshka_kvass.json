@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kvass_bottle": {
+      "conditions": {
+        "items": [
+          {
+            "items": "slavic_delight:kvass_bottle"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slavic_delight:okroshka_kvass"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kvass_bottle"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slavic_delight:okroshka_kvass"
+    ]
+  }
+}

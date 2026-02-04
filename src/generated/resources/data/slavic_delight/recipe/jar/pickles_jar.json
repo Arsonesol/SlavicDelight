@@ -1,0 +1,19 @@
+{
+  "type": "slavic_delight:pickling",
+  "ingredients": [
+    {
+      "item": "slavic_delight:cucumber"
+    },
+    {
+      "item": "slavic_delight:cucumber"
+    },
+    {
+      "item": "slavic_delight:cucumber"
+    }
+  ],
+  "picklingTime": 100,
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:pickles_jar"
+  }
+}

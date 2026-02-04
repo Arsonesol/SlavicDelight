@@ -1,0 +1,21 @@
+{
+  "type": "slavic_delight:clay_pot_cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "minecraft:carrot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:pot_roast_with_carrot"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:wheat_dough"
+    },
+    {
+      "item": "slavic_delight:boiled_potatoes"
+    },
+    {
+      "item": "slavic_delight:minced_chicken"
+    },
+    {
+      "item": "slavic_delight:minced_chicken"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:kurnik"
+  }
+}

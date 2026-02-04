@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "b b",
+    "bbb"
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:clay_pot"
+  }
+}

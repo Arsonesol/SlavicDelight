@@ -1,0 +1,27 @@
+{
+  "type": "slavic_delight:brewing",
+  "bottle": {
+    "count": 1,
+    "id": "farmersdelight:milk_bottle"
+  },
+  "brewingTime": 400,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "slavic_delight:kefir_bottle"
+  }
+}

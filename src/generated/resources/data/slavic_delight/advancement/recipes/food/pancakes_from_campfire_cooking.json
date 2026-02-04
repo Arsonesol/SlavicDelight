@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "slavic_delight:pancakes_from_campfire_cooking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "pancakes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:wheat_dough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "pancakes"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "slavic_delight:pancakes_from_campfire_cooking"
+    ]
+  }
+}
